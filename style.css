@@ -80,6 +80,7 @@ html, body {
 } */
 
 #buttons {
+    padding: 15px;
     display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space out items */
 }
