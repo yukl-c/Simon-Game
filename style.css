@@ -7,6 +7,10 @@ html, body {
     background-color: lightgray;
 }
 
+#title {
+    font-size: 30px;
+}
+
 .outer-circle {
     position: relative;
     display: flex;
@@ -56,6 +60,22 @@ html, body {
 	right:0;
 	background-color:blue;
 	border-radius:0 0 100% 0 ;
+}
+
+#topleft:active {
+	background-color:#ccffcc;
+}
+
+#topright:active  {
+	background-color:#ffcccc;
+}
+
+#bottomleft:active {
+	background-color:#ffffcc;
+}
+
+#bottomright:active {
+	background-color:#ccffff;
 }
 
 #inner-circle {
