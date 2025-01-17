@@ -42,7 +42,7 @@ html, body {
     /* border: 3px solid black; */
     top:0;
 	right:0;
-	background-color:red;
+	background-color:#e60000;
 	border-radius:0 100% 0 0 ;
 }
 
@@ -62,7 +62,7 @@ html, body {
 	border-radius:0 0 100% 0 ;
 }
 
-#topleft:active {
+/* #topleft:active {
 	background-color:#ccffcc;
 }
 
@@ -76,7 +76,7 @@ html, body {
 
 #bottomright:active {
 	background-color:#ccffff;
-}
+} */
 
 #inner-circle {
     border: 3px solid black;
