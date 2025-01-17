@@ -28,6 +28,13 @@ power.addEventListener('change', function() {
         start.disabled = false;
         stright.disabled = false;
         count.value = "-";
+        order_list = [];
+        user_list = [];
+        turn = 1;
+        flash = 0;
+        win = false;
+        good = true;
+        intervalId = 0;
     } else {
         start.disabled = true;
         stright.disabled = true;
