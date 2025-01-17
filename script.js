@@ -19,6 +19,7 @@ var win;
 var compTurn;
 var intervalId;
 var flash = 0;
+var noise = true;
 
 power.addEventListener('change', function() {
     onPower = !onPower;
@@ -84,18 +85,38 @@ function gameTurn () {
 }
 
 function one() {
+    if (noise) {
+        let audio = document.getElementById("clip1");
+        audio.play();
+      }
+    noise = true;
     topleft.style.backgroundColor = "#ccffcc";
 }
 
 function two() {
+    if (noise) {
+        let audio = document.getElementById("clip2");
+        audio.play();
+      }
+    noise = true;
     topright.style.backgroundColor = "#ffcccc";
 }
 
 function three() {
+    if (noise) {
+        let audio = document.getElementById("clip3");
+        audio.play();
+      }
+    noise = true;
     bottomleft.style.backgroundColor = "#ffffcc";
 }
 
 function four() {
+    if (noise) {
+        let audio = document.getElementById("clip4");
+        audio.play();
+      }
+    noise = true;
     bottomright.style.backgroundColor = "#ccffff";
 }
 
@@ -172,6 +193,8 @@ function check () {
                 intervalId = setInterval(gameTurn, 800);
             }
         }, 800);
+
+        noise = false;
 
     }
 
