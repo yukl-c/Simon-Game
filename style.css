@@ -1,137 +1,117 @@
 html, body {
     height: 100%; /* Ensure the body takes full height */
-    margin: 0;    /* Remove default margin */
+    margin: 0; /* Remove default margin */
     display: flex; /* Use Flexbox on the body */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     background-color: lightgray;
-}
-
-#title {
-    font-size: 30px; /* Title font size */
-}
-
-.outer-circle {
+    }
+    
+    #title {
+    font-size: 25px;
+    }
+    
+    .outer-circle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 10px solid black;
     border-radius: 50%;
-    height: 500px; /* Fixed height */
-    width: 500px; /* Fixed width */
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);   
-}
-
-.quarter {
+    height: 350px;
+    width: 350px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .quarter {
     position: absolute;
     width: 50%;
     height: 50%;
     transition: background-color 0.2s ease-in-out;
-}
-
-#topleft {
-    top: 0;
-    left: 0;
-    background-color: green;
-    border-radius: 100% 0 0 0;
-}
-
-#topright {
-    top: 0;
-    right: 0;
-    background-color: #e60000;
-    border-radius: 0 100% 0 0;
-}
-
-#bottomleft {
-    bottom: 0;
-    left: 0;
-    background-color: orange;
-    border-radius: 0 0 0 100%;
-}
-
-#bottomright {
-    bottom: 0;
-    right: 0;
-    background-color: blue;
-    border-radius: 0 0 100% 0;
-}
-
-/* Uncomment to add active state colors for user interaction
-#topleft:active {
-    background-color: #ccffcc;
-}
-
-#topright:active {
-    background-color: #ffcccc;
-}
-
-#bottomleft:active {
-    background-color: #ffffcc;
-}
-
-#bottomright:active {
-    background-color: #ccffff;
-}
-*/
-
-#inner-circle {
+    }
+    
+    #topleft {
+    /* border: 3px solid black; */
+    top:0;
+    left:0;
+    background-color:green;
+    border-radius:100% 0 0 0;
+    }
+    
+    #topright {
+    /* border: 3px solid black; */
+    top:0;
+    right:0;
+    background-color:#e60000;
+    border-radius:0 100% 0 0 ;
+    }
+    
+    #bottomleft {
+    /* border: 3px solid black; */
+    bottom:0;
+    left:0;
+    background-color:orange;
+    border-radius:0 0 0 100%;
+    }
+    
+    #bottomright {
+    /* border: 3px solid black; */
+    bottom:0;
+    right:0;
+    background-color:blue;
+    border-radius:0 0 100% 0 ;
+    }
+    
+    /* #topleft:active {
+    background-color:#ccffcc;
+    }
+    
+    #topright:active {
+    background-color:#ffcccc;
+    }
+    
+    #bottomleft:active {
+    background-color:#ffffcc;
+    }
+    
+    #bottomright:active {
+    background-color:#ccffff;
+    } */
+    
+    #inner-circle {
     border: 3px solid black;
-    width: 50%;
-    height: 50%;
-    background-color: grey;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    border-radius: 50%;
-    pointer-events: auto;
+    width:50%;
+    height:50%;
+    background-color:grey;
+    position:absolute;
+    top:25%;
+    left:25%;
+    border-radius:50%;
+    pointer-events:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-#buttons {
+    }
+    
+    /* #buttons div {
+    border: solid 3px red;
+    } */
+    
+    #buttons {
     padding: 15px;
-    display: flex; /* Use Flexbox */
-    justify-content: space-between; /* Space out items */
-    width: 100%; /* Full width for buttons */
-}
-
-input[type="checkbox"] {
-    accent-color: #007bff; /* Custom checkbox color */
-}
-
-input[type="text"] { 
+    display: flex; /* Use Flexbox /
+    justify-content: space-between; / Space out items */
+    }
+    
+    input[type="checkbox"] {
+    accent-color: #007bff;
+    }
+    
+    input[type="text"] {
     color: red;
     background-color: #5b0000;
-    width: 30px; /* Fixed width for input */
-    text-align: center; 
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 600px) {
-    .outer-circle {
-        height: 80vmin; /* Responsive height */
-        width: 80vmin; /* Responsive width */
+    width: 30px;
+    text-align: center;
     }
-
-    #title {
-        font-size: 20px; /* Smaller font size on mobile */
-    }
-
-    input[type="text"] {
-        width: 25px; /* Smaller input width for mobile */
-    }
-
-    #buttons {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center; /* Center align buttons */
-    }
-
-    #buttons div {
-        margin: 5px 0; /* Spacing between buttons */
-    }
-}
