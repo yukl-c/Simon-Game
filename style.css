@@ -8,8 +8,7 @@ html, body {
 }
 
 #title {
-    font-size: 2em; /* Use relative units for better responsiveness */
-    margin-bottom: 10px;
+    font-size: 30px; /* Title font size */
 }
 
 .outer-circle {
@@ -19,8 +18,8 @@ html, body {
     align-items: center;
     border: 10px solid black;
     border-radius: 50%;
-    height: 50vmin; /* Responsive height */
-    width: 50vmin; /* Responsive width */
+    height: 500px; /* Fixed height */
+    width: 500px; /* Fixed width */
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);   
 }
 
@@ -42,7 +41,7 @@ html, body {
     top: 0;
     right: 0;
     background-color: #e60000;
-    border-radius: 0 100% 0 0 ;
+    border-radius: 0 100% 0 0;
 }
 
 #bottomleft {
@@ -56,8 +55,26 @@ html, body {
     bottom: 0;
     right: 0;
     background-color: blue;
-    border-radius: 0 0 100% 0 ;
+    border-radius: 0 0 100% 0;
 }
+
+/* Uncomment to add active state colors for user interaction
+#topleft:active {
+    background-color: #ccffcc;
+}
+
+#topright:active {
+    background-color: #ffcccc;
+}
+
+#bottomleft:active {
+    background-color: #ffffcc;
+}
+
+#bottomright:active {
+    background-color: #ccffff;
+}
+*/
 
 #inner-circle {
     border: 3px solid black;
@@ -80,37 +97,37 @@ html, body {
     padding: 15px;
     display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space out items */
-    width: 100%; /* Full width to accommodate spacing */
+    width: 100%; /* Full width for buttons */
 }
 
 input[type="checkbox"] {
-    accent-color: #007bff;
+    accent-color: #007bff; /* Custom checkbox color */
 }
 
 input[type="text"] { 
     color: red;
     background-color: #5b0000;
-    width: 30px;
+    width: 30px; /* Fixed width for input */
     text-align: center; 
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
     .outer-circle {
-        height: 80vmin; /* Reduce size on smaller screens */
-        width: 80vmin; /* Reduce size on smaller screens */
+        height: 80vmin; /* Responsive height */
+        width: 80vmin; /* Responsive width */
     }
 
     #title {
-        font-size: 1.5em; /* Smaller title font size */
+        font-size: 20px; /* Smaller font size on mobile */
     }
 
     input[type="text"] {
-        width: 25px; /* Smaller input width */
+        width: 25px; /* Smaller input width for mobile */
     }
-    
+
     #buttons {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; /* Stack buttons vertically on small screens */
         align-items: center; /* Center align buttons */
     }
 
